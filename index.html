@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizzeria</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="main-logo">
+          <h1><strong>Pizzeria</strong></h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="container" class="row">
+        <div class="jumbotron jumb-main">
+          <h2><span>ORDER A PIZZA!</span><h2>
+        </div>
+        <h3 class="welcome-msg">Welcome to Pizzeria!</h3>
+        <div id="place-order" class="col-md-6">
+          <div>
+            <h4>Order Your Pizza Below.</h4>
+            <form>
+              <div id="pizza-size-q" class="form-group">
+                <h4>Choose Size</h4>
+                <label class="radio-inline">
+                  <input type="radio" name="pizza-size" id="pizza-size1" value="pizza-sm">
+                  Small (10")
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pizza-size" id="pizza-size2" value="pizza-md">
+                  Medium (12")
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="pizza-size" id="pizza-size3" value="pizza-lg" checked>
+                  Large (14")
+                </label>
+              </div>
+
+              <div id="pizza-toppings" class="form-group">
+                <h4>Select Toppings</h4>
+                <input type="checkbox" name="meat-toppings" value="pepperoni"> Pepperoni (+$2)<br>
+                <input type="checkbox" name="meat-toppings" value="steak"> Steak (+$2)<br>
+                <input type="checkbox" name="meat-toppings" value="bacon"> Bacon (+$2)<br>
+                <input type="checkbox" name="meat-toppings" value="chicken"> Chicken (+$2)<br>
+                <input type="checkbox" name="meat-toppings" value="beef"> Beef (+$2)<br>
+                <input type="checkbox" name="meat-toppings" value="ham"> Ham (+$2)<br>
+                <input type="checkbox" name="non-meat-toppings" value="gr-peppers"> Green Peppers (+$1)<br>
+                <input type="checkbox" name="non-meat-toppings" value="mushrooms"> Mushrooms (+$1)<br>
+                <input type="checkbox" name="non-meat-toppings" value="onions"> Onions (+$1)<br>
+                <input type="checkbox" name="non-meat-toppings" value="olives"> Black Olives (+$1)<br>
+                <input type="checkbox" name="non-meat-toppings" value="pineapple"> Pineapple (+$1)<br>
+                <input type="checkbox" name="non-meat-toppings" value="tomatos"> Diced Tomatos (+$1)<br>
+              </div>
+              <button id="submit-order" class="btn btn-primary" type="submit">Place an Order</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="complete-order" class="col-md-6">
+          <h4>Thank you for placing an order with us.</h4>
+          <h5>Your total is <span id="pizza-price"></span>. Your order will be ready shortly.</h5>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <div class="container">
+        <p>&copy; 2016 Pizzeria by Slavik Migovich</p>
+      </div>
+    </footer>
+  </body>
+</html>

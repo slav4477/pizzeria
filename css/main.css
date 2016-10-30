@@ -1,0 +1,34 @@
+#complete-order {
+  display: none;
+}
+
+body {
+  background-color: #F0D7C8;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #F0BC9C;
+  margin-bottom: 10px;
+}
+
+.jumb-main {
+  height: 270px;
+  background: linear-gradient(#F0D7C8, transparent 20%),
+              linear-gradient(0deg, #F0D7C8, transparent 20%),
+              #F0D7C8 url('../img/pizza.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.jumb-main h2 {
+  font-style: italic;
+  font-size: 4em;
+  padding-top: 40px;
+}
+
+.welcome-msg {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
