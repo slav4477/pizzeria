@@ -9,19 +9,25 @@ function Pizza(size, meatToppings, nonMeatToppings) {
 }
 
 Pizza.prototype.PriceofPizza = function() {
-
+  if(this.pizzaSize === "pizza-sm") {
+    return this.pizzaPrice += 10;
+  } else if(this.pizzaSize === "pizza-md") {
+    return this.pizzaPrice += 12;
+  } else if(this.pizzaSize === "pizza-lg") {
+    return this.pizzaPrice += 14;
+  }
 }
 
 Pizza.prototype.PriceofMeatToppings = function() {
-
+  return this.meatTopsPrice = this.meatTops * 2;
 }
 
 Pizza.prototype.PriceofNonMeatToppings = function() {
-
+  return this.nonMeatTopsPrice = this.nonMeatTops * 1;
 }
 
 Pizza.prototype.Total = function() {
-
+  return this.totalPrice = this.pizzaPrice + this.meatTopsPrice + this.nonMeatTopsPrice;
 }
 
 $(document).ready(function() {
