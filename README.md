@@ -11,29 +11,17 @@ GitHub Pages Link: https://slav4477.github.io/pizzeria/
 
 ##Specifications
 
-1. It will allow user to choose meat toppings.
-  * Example Input: checked: pepperoni, beef, ham
-  * Example Output: ["pepperoni", "beef", "ham"]
-
-2. It will allow user to choose non meat toppings.
-  * Example Input: checked: onions, olives
-  * Example Output: ["onions", "olives"]
-
-3. It will calculate total based on pizza size.
-  * Example Input: large
+1. It will calculate price based on pizza size.
+  * Example Input: large pizza.
   * Example Output: 14
 
-4. It will calculate total for meat toppings.
-  * Example Input: pepperoni, ham, beef
-  * Example Output: 6
+2. It will calculate price of the pizza with selected meat toppings.
+  * Example Input: small pizza with pepperoni, ham and beef.
+  * Example Output: 16
 
-5. It will calculate total for non meat toppings.
-  * Example Input: onions, olives
-  * Example Output: 2
-
-6. It will display the total.
-  * Example Input: Large with pepperoni and olives. 
-  * Example Output: 17
+3. It will calculate price of the pizza with selected non meat toppings.
+  * Example Input: small pizza with onions and olives.
+  * Example Output: 12
 
 ##Setup/Installation Requirements
 
